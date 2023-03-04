@@ -13,4 +13,4 @@ api = Api(app)
 api.add_resource(MyClassification, '/api/operations/ml/classification')
 api.add_resource(EncDec, '/api/phe/client/<string:name>')
 
-app.run(debug=True)
+app.run()
