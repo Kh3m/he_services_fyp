@@ -13,4 +13,5 @@ api = Api(app)
 api.add_resource(MyClassification, '/api/operations/ml/classification')
 api.add_resource(EncDec, '/api/phe/client/<string:name>')
 
-app.run(threaded=True, port=2355682782678462754121, debug=True)
+if __name__ == '__main__':
+  app.run(threaded=True, port=5000)
